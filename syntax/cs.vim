@@ -101,7 +101,7 @@ syn cluster xmlTagHook add=csXmlTag
 
 syn match   csXmlCommentLeader	+\/\/\/+    contained
 syn match   csXmlComment	+\/\/\/.*$+ contains=csXmlCommentLeader,@csXml,@Spell
-syntax include @csXml syntax/xml.vim
+silent! syntax include @csXml syntax/xml.vim
 hi def link xmlRegion Comment
 
 
